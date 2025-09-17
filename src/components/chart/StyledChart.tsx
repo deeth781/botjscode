@@ -40,11 +40,11 @@ export function StyledChart(props: ChartProps) {
       fillOpacity: 1,
       discrete: [],
       shape: 'circle',
-      radius: 2,
+      radius: 2, // giữ nguyên API cũ
       offsetX: 0,
       offsetY: 0,
       showNullDataPoints: true,
-    },
+    } as any, // ép kiểu để không lỗi TS
     stroke: {
       curve: 'smooth',
     },
